@@ -1,86 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=\"en\">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nishanth Molleti | Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset=\"UTF-8\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <title>Nishanth's Portfolio</title>
+    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
+    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap\">
+    <script src=\"https://cdn.tailwindcss.com\"></script>
     <style>
-        body { font-family: 'Roboto', sans-serif; }
-        .gradient-text {
-            background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+        body { background-color: #0c0c0c; }
+        .gradient-text { background: linear-gradient(to right, #39ff14 0%, #00ff7f 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
-<body class="bg-gray-900 text-white">
+<body class=\"bg-black text-white font-roboto\">
 
-    <nav class="py-6 px-8 flex justify-between items-center">
-        <h1 class="text-xl font-bold gradient-text">Nishanth Molleti</h1>
-        <ul class="flex gap-6">
-            <li><a href="#about" class="hover:text-cyan-400">About</a></li>
-            <li><a href="#skills" class="hover:text-cyan-400">Skills</a></li>
-            <li><a href="#projects" class="hover:text-cyan-400">Projects</a></li>
-            <li><a href="#contact" class="hover:text-cyan-400">Contact</a></li>
+    <nav class=\"py-6 px-8 flex justify-between items-center\">
+        <h1 class=\"text-xl font-bold gradient-text\" style=\"color: #32CD32;\">Nishanth Molleti</h1>
+        <ul class=\"flex gap-6\">
+            <li><a href=\"#skills\" class=\"hover:text-green-400\">Skills</a></li>
+            <li><a href=\"#projects\" class=\"hover:text-green-400\">Projects</a></li>
+            <li><a href=\"#contact\" class=\"hover:text-green-400\">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="hero" class="py-20 text-center">
-        <h2 class="text-4xl font-bold mb-3">Hi, I'm <span class="gradient-text">Nishanth</span></h2>
-        <p class="text-lg">Software Developer | Tech Enthusiast | Problem Solver</p>
-        <a href="#projects" class="mt-6 inline-block bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-6 py-2 rounded-lg shadow hover:shadow-lg transition">See My Work</a>
+    <section id=\"hero\" class=\"text-center py-16 px-8\">
+        <h1 class=\"text-4xl font-bold gradient-text\" style=\"color: #32CD32;\">Nishanth Molleti</h1>
+        <p class=\"mt-2\">Software Developer | Tech Enthusiast | Problem Solver</p>
+        <a href=\"#projects\" class=\"mt-4 inline-block bg-green-500 px-4 py-2 rounded shadow hover:bg-green-600\">View Projects</a>
     </section>
 
-    <section id="about" class="py-20 px-8 bg-gray-800">
-        <h3 class="text-3xl font-bold mb-6">About Me</h3>
-        <p class="max-w-3xl mx-auto">I'm a passionate software developer with expertise in web development, Kubernetes, and competitive programming. I love building applications that are efficient, scalable, and visually appealing.</p>
+    <section id=\"skills\" class=\"py-16 px-8\">
+        <h2 class=\"text-3xl mb-4\">Skills</h3>
+        <p>JavaScript, React, Kubernetes, Python, Competitive Programming</p>
     </section>
 
-    <section id="skills" class="py-20 px-8">
-        <h3 class="text-3xl font-bold mb-6">Skills</h3>
-        <div class="flex gap-4 justify-center flex-wrap">
-            <span class="px-4 py-2 bg-gray-700 rounded">JavaScript</span>
-            <span class="px-4 py-2 bg-gray-700 rounded">React.js</span>
-            <span class="px-4 py-2 bg-gray-700 rounded">Kubernetes</span>
-            <span class="px-4 py-2 bg-gray-700 rounded">Python</span>
-            <span class="px-4 py-2 bg-gray-700 rounded">Competitive Programming</span>
-            <span class="px-4 py-2 bg-gray-700 rounded">Git & GitHub</span>
-        </div>
-    </section>
-
-    <section id="projects" class="py-20 px-8 bg-gray-800">
-        <h3 class="text-3xl font-bold mb-6">Projects</h3>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-gray-700 rounded-lg p-4">
-                <h4 class="text-xl font-semibold">ProjectX</h4>
-                <p class="mt-2">An internal referral platform built with JPA and Hibernate for robust data management.</p>
+    <section id=\"projects\" class=\"py-16 px-8 bg-gray-900\">
+        <h3 class=\"text-3xl mb-6\">Projects</h3>
+        <div class=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6\">
+            <div class=\"bg-gray-800 p-4 rounded\">
+                <h4 class=\"font-bold\">Project A</h4>
+                <p>Description of Project A.</p>
             </div>
-            <div class="bg-gray-700 rounded-lg p-4">
-                <h4 class="text-xl font-semibold">CloudOps Dashboard</h4>
-                <p class="mt-2">A Kubernetes-focused tool to simplify cloud infrastructure management.</p>
-            </div>
-            <div class="bg-gray-700 rounded-lg p-4">
-                <h4 class="text-xl font-semibold">CP4 Journey</h4>
-                <p class="mt-2">My competitive programming journey tracked and visualized through interactive dashboards.</p>
+            <div class=\"bg-gray-700 rounded-lg p-4\">
+                <h4 class=\"font-bold\">Project B</h4>
+                <p>Description of Project B.</p>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-20 px-8">
-        <h3 class="text-3xl font-bold mb-6">Contact Me</h3>
-        <p>Email: <a href="mailto:nishanth.molleti9@gmail.com" class="hover:text-cyan-400">nishanth.molleti9@gmail.com</a></p>
-        <p>Phone: <a href="tel:9133752494" class="hover:text-cyan-400">9133752494</a></p>
-        <div class="mt-4">
-            <a href="https://github.com/NishanthMolleti" target="_blank" class="mr-4 hover:text-cyan-400">GitHub</a>
-            <a href="https://www.linkedin.com/in/sri-nishanth-molleti/" target="_blank" class="hover:text-cyan-400">LinkedIn</a>
-        </div>
+    <section id=\"contact\" class=\"py-16 px-8\">
+        <h3 class=\"text-3xl mb-4\">Contact</h3>
+        <p>Email: <a href=\"mailto:nishanth.molleti9@gmail.com\" class=\"hover:text-green-400\">nishanth.molleti9@gmail.com</a></p>
+        <p>Phone: <a href=\"tel:9133752494\" class=\"hover:text-green-400\">9133752494</a></p>
     </section>
 
-    <footer class="text-center py-4 text-sm bg-gray-800">
-        © 2025 Nishanth Molleti. All rights reserved.
+    <footer class=\"text-center py-4\">
+        &copy; 2025 Nishanth Molleti
     </footer>
 
 </body>
